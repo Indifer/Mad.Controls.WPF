@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E1A6876B-34BA-494F-81F7-4BBD2A5D91F2}</ProjectGuid>
+    <ProjectGuid>{9EAD9724-8DC7-4D39-8CB9-6AB4F88A4083}</ProjectGuid>
     <OutputType>library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Mad.WPF.BaseControls</RootNamespace>
-    <AssemblyName>Mad.WPF.BaseControls</AssemblyName>
+    <RootNamespace>Mad.WPF.ToolControls</RootNamespace>
+    <AssemblyName>Mad.WPF.ToolControls</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -30,7 +30,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\Mad.WPF.BaseControls.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\Mad.WPF.ToolControls.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -48,11 +48,8 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MButton.xaml.cs">
-      <DependentUpon>MButton.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MTextBox.xaml.cs">
-      <DependentUpon>MTextBox.xaml</DependentUpon>
+    <Compile Include="NumericKeypad.xaml.cs">
+      <DependentUpon>NumericKeypad.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -78,14 +75,100 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="MButton.xaml">
+    <Page Include="NumericKeypad.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MTextBox.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_0_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_1_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_2_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_3_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_4_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_5_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_6_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_7_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_8_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_9_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_back_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_c_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_close_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_comma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_comma_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_point.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Img\1.0\btn_numpad_point_pressed.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Mad.WPF.Helpers\Mad.WPF.Helpers.csproj">

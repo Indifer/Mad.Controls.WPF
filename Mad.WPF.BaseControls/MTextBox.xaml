@@ -4,11 +4,12 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Mad.WPF.BaseControls"
+             xmlns:helper="clr-namespace:Mad.WPF.Helpers;assembly=Mad.WPF.Helpers"
              mc:Ignorable="d" 
              d:DesignHeight="50" d:DesignWidth="120">
     <TextBox.Resources>
 
-        <local:UCCornerRadiusConverter x:Key="cornerRadiusConverter" />
+        <helper:UCCornerRadiusConverter x:Key="cornerRadiusConverter" />
         
         <Style TargetType="{x:Type local:MTextBox}" >
             <Setter Property="local:TextBoxMonitor.IsMonitoring" Value="True"/>

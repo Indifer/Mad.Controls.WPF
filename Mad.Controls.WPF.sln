@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mad.WPF.BaseControls", "Mad
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mad.WPF.BaseControls.Test", "Mad.WPF.BaseControls.Test\Mad.WPF.BaseControls.Test.csproj", "{34747B9B-1313-4565-AC33-7FECDB673158}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mad.WPF.ToolControls", "Mad.WPF.ToolControls\Mad.WPF.ToolControls.csproj", "{9EAD9724-8DC7-4D39-8CB9-6AB4F88A4083}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mad.WPF.Helpers", "Mad.WPF.Helpers\Mad.WPF.Helpers.csproj", "{3E9AAC75-5583-4D16-BA05-817ACEABD397}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{34747B9B-1313-4565-AC33-7FECDB673158}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34747B9B-1313-4565-AC33-7FECDB673158}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34747B9B-1313-4565-AC33-7FECDB673158}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EAD9724-8DC7-4D39-8CB9-6AB4F88A4083}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EAD9724-8DC7-4D39-8CB9-6AB4F88A4083}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EAD9724-8DC7-4D39-8CB9-6AB4F88A4083}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EAD9724-8DC7-4D39-8CB9-6AB4F88A4083}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E9AAC75-5583-4D16-BA05-817ACEABD397}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E9AAC75-5583-4D16-BA05-817ACEABD397}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E9AAC75-5583-4D16-BA05-817ACEABD397}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E9AAC75-5583-4D16-BA05-817ACEABD397}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

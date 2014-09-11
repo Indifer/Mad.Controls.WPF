@@ -6,7 +6,7 @@ using System.Windows;
 using System.Windows.Data;
 using System.Windows.Media;
 
-namespace Mad.WPF.BaseControls
+namespace Mad.WPF.Helpers
 {
     [ValueConversion(typeof(double), typeof(CornerRadius))]
     public class UCCornerRadiusConverter : IValueConverter

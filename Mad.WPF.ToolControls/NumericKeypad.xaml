@@ -1,0 +1,346 @@
+﻿<UserControl x:Class="Mad.WPF.ToolControls.NumericKeypad"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="370">
+
+    <UserControl.Resources>
+        <Style x:Key="NumberBtnStyle" TargetType="Button">
+            <Setter Property="Width" Value="98"></Setter>
+            <Setter Property="Height" Value="72"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+            <Setter Property="VerticalAlignment" Value="Top"></Setter>
+            <Setter Property="BorderBrush" Value="Transparent"></Setter>
+            <Setter Property="Foreground" Value="Transparent"></Setter>
+            <Setter Property="Cursor" Value="Hand"></Setter>
+        </Style>
+    </UserControl.Resources>
+    <Grid Height="450" Width="370" Margin="0,0,0,0">
+        <Rectangle RadiusX="20" RadiusY="20" Margin="0,0,0,0" Fill="#4AC1D2">
+        </Rectangle>
+        <Button x:Name="btn_numpad_1" Margin="28,28,0,0" Style="{StaticResource NumberBtnStyle}" Content="1">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid  x:Name="buttonbackground">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Img/1.0/btn_numpad_1.png"></ImageBrush>
+                        </Grid.Background>
+                        <ContentPresenter Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsPressed" Value="True">
+                            <Setter TargetName="buttonbackground"  Property="Background">
+                                <Setter.Value>
+                                    <ImageBrush  ImageSource="Img/1.0/btn_numpad_1_pressed.png" ></ImageBrush>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btn_numpad_2" Margin="134,28,0,0" Style="{StaticResource NumberBtnStyle}" Content="2">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid  x:Name="buttonbackground">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Img/1.0/btn_numpad_2.png"></ImageBrush>
+                        </Grid.Background>
+                        <ContentPresenter Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsPressed" Value="True">
+                            <Setter TargetName="buttonbackground"  Property="Background">
+                                <Setter.Value>
+                                    <ImageBrush  ImageSource="Img/1.0/btn_numpad_2_pressed.png" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btn_numpad_3" Margin="241,28,0,0" Style="{StaticResource NumberBtnStyle}" Content="3">
+            <Button.Foreground>
+                <ImageBrush/>
+            </Button.Foreground>
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid  x:Name="buttonbackground">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Img/1.0/btn_numpad_3.png"></ImageBrush>
+                        </Grid.Background>
+                        <ContentPresenter Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsPressed" Value="True">
+                            <Setter TargetName="buttonbackground"  Property="Background">
+                                <Setter.Value>
+                                    <ImageBrush  ImageSource="Img/1.0/btn_numpad_3_pressed.png" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button x:Name="btn_numpad_4" Margin="28,108,0,0" Style="{StaticResource NumberBtnStyle}" Content="4">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid  x:Name="buttonbackground">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Img/1.0/btn_numpad_4.png"></ImageBrush>
+                        </Grid.Background>
+                        <ContentPresenter Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsPressed" Value="True">
+                            <Setter TargetName="buttonbackground"  Property="Background">
+                                <Setter.Value>
+                                    <ImageBrush  ImageSource="Img/1.0/btn_numpad_4_pressed.png" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btn_numpad_5" Margin="134,108,0,0" Style="{StaticResource NumberBtnStyle}" Content="5">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid  x:Name="buttonbackground">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Img/1.0/btn_numpad_5.png"></ImageBrush>
+                        </Grid.Background>
+                        <ContentPresenter Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsPressed" Value="True">
+                            <Setter TargetName="buttonbackground"  Property="Background">
+                                <Setter.Value>
+                                    <ImageBrush  ImageSource="Img/1.0/btn_numpad_5_pressed.png" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btn_numpad_6" Margin="241,108,0,0" Style="{StaticResource NumberBtnStyle}" Content="6">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid  x:Name="buttonbackground">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Img/1.0/btn_numpad_6.png"></ImageBrush>
+                        </Grid.Background>
+                        <ContentPresenter Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsPressed" Value="True">
+                            <Setter TargetName="buttonbackground"  Property="Background">
+                                <Setter.Value>
+                                    <ImageBrush  ImageSource="Img/1.0/btn_numpad_6_pressed.png" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button x:Name="btn_numpad_7" Margin="28,188,0,0" Style="{StaticResource NumberBtnStyle}" Content="7">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid  x:Name="buttonbackground">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Img/1.0/btn_numpad_7.png"></ImageBrush>
+                        </Grid.Background>
+                        <ContentPresenter Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsPressed" Value="True">
+                            <Setter TargetName="buttonbackground"  Property="Background">
+                                <Setter.Value>
+                                    <ImageBrush  ImageSource="Img/1.0/btn_numpad_7_pressed.png" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btn_numpad_8" Margin="134,188,0,0" Style="{StaticResource NumberBtnStyle}" Content="8">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid  x:Name="buttonbackground">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Img/1.0/btn_numpad_8.png"></ImageBrush>
+                        </Grid.Background>
+                        <ContentPresenter Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsPressed" Value="True">
+                            <Setter TargetName="buttonbackground"  Property="Background">
+                                <Setter.Value>
+                                    <ImageBrush  ImageSource="Img/1.0/btn_numpad_8_pressed.png" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btn_numpad_9" Margin="241,188,0,0" Style="{StaticResource NumberBtnStyle}" Content="9">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid  x:Name="buttonbackground">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Img/1.0/btn_numpad_9.png"></ImageBrush>
+                        </Grid.Background>
+                        <ContentPresenter Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsPressed" Value="True">
+                            <Setter TargetName="buttonbackground"  Property="Background">
+                                <Setter.Value>
+                                    <ImageBrush  ImageSource="Img/1.0/btn_numpad_9_pressed.png" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button x:Name="btn_numpad_c" Margin="28,268,0,0" Style="{StaticResource NumberBtnStyle}">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid  x:Name="buttonbackground">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Img/1.0/btn_numpad_c.png"></ImageBrush>
+                        </Grid.Background>
+                        <ContentPresenter Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsPressed" Value="True">
+                            <Setter TargetName="buttonbackground"  Property="Background">
+                                <Setter.Value>
+                                    <ImageBrush  ImageSource="Img/1.0/btn_numpad_c_pressed.png" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btn_numpad_0" Margin="134,268,0,0" Style="{StaticResource NumberBtnStyle}" Content="0">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid  x:Name="buttonbackground">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Img/1.0/btn_numpad_0.png"></ImageBrush>
+                        </Grid.Background>
+                        <ContentPresenter Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsPressed" Value="True">
+                            <Setter TargetName="buttonbackground"  Property="Background">
+                                <Setter.Value>
+                                    <ImageBrush  ImageSource="Img/1.0/btn_numpad_0_pressed.png" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btn_numpad_back" Margin="241,268,0,0" Style="{StaticResource NumberBtnStyle}">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid  x:Name="buttonbackground">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Img/1.0/btn_numpad_back.png"></ImageBrush>
+                        </Grid.Background>
+                        <ContentPresenter Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsPressed" Value="True">
+                            <Setter TargetName="buttonbackground"  Property="Background">
+                                <Setter.Value>
+                                    <ImageBrush  ImageSource="Img/1.0/btn_numpad_back_pressed.png" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button x:Name="btn_numpad_point" Content="." Margin="28,348,0,0" Style="{StaticResource NumberBtnStyle}">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid  x:Name="buttonbackground">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Img/1.0/btn_numpad_point.png"></ImageBrush>
+                        </Grid.Background>
+                        <ContentPresenter Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsPressed" Value="True">
+                            <Setter TargetName="buttonbackground"  Property="Background">
+                                <Setter.Value>
+                                    <ImageBrush  ImageSource="Img/1.0/btn_numpad_point_pressed.png" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btn_numpad_comma" Content="," Margin="134,348,0,0" Style="{StaticResource NumberBtnStyle}">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid  x:Name="buttonbackground">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Img/1.0/btn_numpad_comma.png"></ImageBrush>
+                        </Grid.Background>
+                        <ContentPresenter Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsPressed" Value="True">
+                            <Setter TargetName="buttonbackground"  Property="Background">
+                                <Setter.Value>
+                                    <ImageBrush  ImageSource="Img/1.0/btn_numpad_comma_pressed.png" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btn_numpad_close" Content="," Margin="241,348,0,0" Style="{StaticResource NumberBtnStyle}">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid  x:Name="buttonbackground">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Img/1.0/btn_numpad_close.png"></ImageBrush>
+                        </Grid.Background>
+                        <ContentPresenter Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsPressed" Value="True">
+                            <Setter TargetName="buttonbackground"  Property="Background">
+                                <Setter.Value>
+                                    <ImageBrush  ImageSource="Img/1.0/btn_numpad_close_pressed.png" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+    </Grid>
+</UserControl>
