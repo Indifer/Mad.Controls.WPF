@@ -1,0 +1,13 @@
+﻿<Window x:Class="Mad.WPF.BaseControls.Test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:userUcontrol="clr-namespace:Mad.WPF.BaseControls;assembly=Mad.WPF.BaseControls"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Left">
+
+            <userUcontrol:MTextBox Height="50" Width="140" Placeholder="用户名"></userUcontrol:MTextBox>
+            <userUcontrol:MTextBox Height="50" Width="140" Placeholder="密码"></userUcontrol:MTextBox>
+        </StackPanel>
+    </Grid>
+</Window>
